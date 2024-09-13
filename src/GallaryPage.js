@@ -263,7 +263,7 @@ function GallaryPage() {
                           </Card.Body>
                           <div className="card-corner-button-container">
                             <Row>
-                              <Col className="text-start">
+                              {/* <Col className="text-start">
                                 <div className="form-check ms-2">
                                   <input
                                     data-id={d.id}
@@ -274,6 +274,12 @@ function GallaryPage() {
                                     onClick={(e) => handleCheckboxChange(d, e)}
                                     className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                                 </div>
+                              </Col> */}
+                              <Col>
+                                <a
+                                  target="_blank"
+                                  className="btn btn-sm btn-outline-danger"
+                                  href={d.url}>Link</a>
                               </Col>
                               <Col className="text-end">
                                 <button
